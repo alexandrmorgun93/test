@@ -1,0 +1,81 @@
+.table_kids {
+  display: flex;
+  width: 100%;
+  p {
+
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: rem(105px);
+    background-color: $table_head-color;
+    text-align: center;
+    font-family: "Gotham Pro";
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5;
+    border-right: rem(1px) solid #ffffff;
+    border-bottom: rem(1px) solid #ffffff;
+    span {
+      font-weight: 400;
+    }
+    &:nth-child(1) {
+      flex: 1 1 rem(270px);
+    }
+    &:nth-child(2) {
+      flex: 1 1 rem(310px);
+    }
+    &:nth-child(3) {
+      flex: 1 1 rem(310px);
+    }
+    &:nth-child(4) {
+      flex: 1 1 rem(310px);
+    }
+    &:nth-child(5) {
+      flex: 1 1 rem(270px);
+    }
+
+  }
+
+}
+
+.table_kids_item {
+  display: flex;
+  width: 100%;
+  p {
+    width: 100%;
+    display: flex;
+    height: rem(50px);
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border-right: rem(1px) solid #ffffff;
+    border-bottom: rem(1px) solid #ffffff;
+    span {
+      font-weight: 300;
+    }
+    &:nth-child(1) {
+      background-color: $table_left-color;
+      flex: 1 1 rem(270px);
+    }
+    &:nth-child(2) {
+      background-color: $table_bgc;
+      flex: 1 1 rem(310px);
+    }
+    &:nth-child(3) {
+      background-color: $table_bgc;
+      flex: 1 1 rem(310px);
+    }
+    &:nth-child(4) {
+      background-color: $table_bgc;
+      flex: 1 1 rem(310px);
+    }
+    &:nth-child(5) {
+      background-color: $table_bgc;
+      flex: 1 1 rem(270px);
+      border-bottom: none;
+    }
+  }
+}

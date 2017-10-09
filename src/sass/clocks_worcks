@@ -1,0 +1,54 @@
+.clocks_work {
+  width: 100%;
+  padding-top: rem(55px);
+  .title_item {
+    margin-bottom: rem(240px);
+  }
+}
+
+.clocks_work_content {
+
+  background-image: url_css("img/clock_fon.jpg");
+  .container {
+
+    padding: rem(80px);
+    background-color: #fff;
+    position: relative;
+    top: rem(-155px);
+    box-shadow: 0 7px 16px rgba(1, 1, 1, 0.1);
+    .clocks_rectangle {
+
+      width: 53px;
+      height: 188px;
+      border-radius: 1px;
+      background-color: #1f8ac6;
+      position: absolute;
+      left: rem(-30px);
+      top: rem(-40px);
+      z-index: -1;
+    }
+    ul {
+      column-count: 2;
+      li {
+        position: relative;
+        padding-left: rem(30px);
+        margin-bottom: rem(30px);
+        &::before {
+          @include before_fig(rem(10px), rem(10px), $sky_color);
+          left: rem(1px);
+          top: rem(7px);
+          border-radius: 50%;
+          z-index: 5;
+        }
+
+        p {
+          margin-bottom: 20px;
+          b {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+

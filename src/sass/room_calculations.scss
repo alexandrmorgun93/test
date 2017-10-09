@@ -1,0 +1,70 @@
+.rooms_calculations {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+  .rooms{
+    display: flex;
+    flex-direction: column;
+      .title_room{
+        font-family: Intro;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 2.05;
+        text-align: center;
+        margin: rem(75px) 0 rem(50px) 0;
+      }
+    .rooms_head {
+      display: flex;
+      width: 100%;
+
+      p {
+        width: 100%;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1.17;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: rem(80px);
+        height: rem(105px);
+        background-color: $table_head-color;
+        border-bottom: rem(1px) solid #ffffff;
+        border-right: rem(1px) solid #ffffff;
+        color: #ffffff;
+
+        span {
+          font-weight: 300;
+          font-size: 13px;
+        }
+      }
+    }
+    .rooms_item{
+      display: flex;
+      width: 100%;
+        p{
+          width:100%;
+          width: rem(80px);
+          height: rem(50px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 17px;
+          font-weight: 700;
+          line-height: 1.17;
+          border-bottom: rem(1px) solid #ffffff;
+          border-right: rem(1px) solid #ffffff;
+            &:nth-child(1){
+              background-color:$table_left-color;
+            }
+            &:nth-child(n+2){
+              background-color: $table_bgc;
+            }
+        }
+    }
+  }
+}
