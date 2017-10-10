@@ -1,3 +1,4 @@
+
 body{
   padding-top: rem(262px);
   font: 300 rem(17px)/1.64 $gotham;
@@ -14,10 +15,15 @@ body{
 .title_item{
   text-align: center;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 0.9;
-  margin-bottom: rem(100px);
   font-family: $intro;
+
+}
+.prise_room{
+  .title_item{
+    margin-bottom: rem(80px);
+  }
 }
 .line_bottom {
   display: flex;

@@ -30,12 +30,12 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: rem(80px);
-        height: rem(105px);
+        max-width: rem(80px);
         background-color: $table_head-color;
         border-bottom: rem(1px) solid #ffffff;
         border-right: rem(1px) solid #ffffff;
         color: #ffffff;
+        padding: rem(25px) rem(15px) rem(25px) rem(15px);
 
         span {
           font-weight: 300;
@@ -48,8 +48,8 @@
       width: 100%;
         p{
           width:100%;
-          width: rem(80px);
-          height: rem(50px);
+          max-width: rem(80px);
+          padding: rem(25px) 0 rem(25px) 0;
           display: flex;
           justify-content: center;
           align-items: center;

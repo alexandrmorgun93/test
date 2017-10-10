@@ -46,9 +46,13 @@
       padding: rem(15px) rem(5px);
       text-align: center;
 
+
       &:nth-child(1) {
         background-color: $table_left-color;
         flex: 1 1 rem(270px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
       }
       &:nth-child(2) {

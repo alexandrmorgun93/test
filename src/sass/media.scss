@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1330px) {
+  .menu_nav {
+    a {
+      margin-right: rem(10px);
+    }
+  }
+}
+
+@media only screen and (max-width: 1340px) {
+  .btn_mobile {
+    visibility: visible;
+    &.active {
+
+      .btn1 {
+        width: rem(25px);
+        transform: rotate(-405deg) translate(-14px, 2px);
+
+
+      }
+      .btn2 {
+       opacity: 0;
+
+      }
+     .btn3 {
+        transform: rotate(405deg) translate(-8px, 4px);;
+
+      }
+    }
+
+  }
+
+  .menu_nav {
+    border: 1px solid red;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: rem(130px);
+    visibility: hidden;
+    opacity: 0;
+    left: -150vw;
+    transition: .3s;
+    justify-content: space-around;
+    &.active {
+      opacity: 1;
+      left: 0;
+      visibility: visible;
+    }
+    p {
+
+    }
+  }
+  .header_right {
+    display: flex;
+
+  }
+  .header_main {
+    .container {
+      align-items: center;
+    }
+  }
+}

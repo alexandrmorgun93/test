@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  box-shadow: 0 1px 35px rgba(1, 1, 1, 0.06);
 
   .head_logo {
     height: rem(131px);
@@ -24,11 +25,17 @@
   }
 }
 
-.menu_nav {
+.open {
+  position: absolute;
+  left: 100%;
+  transition: 1s scale;
+}
 
+.menu_nav {
   width: 100%;
   display: flex;
   align-items: center;
+
   a {
     display: flex;
     color: #252a2d;
@@ -42,6 +49,39 @@
       border-bottom: 1px solid #2fa9d2;
     }
 
+  }
+}
+
+
+.btn_mobile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: rem(50px);
+  cursor: pointer;
+  visibility:hidden;
+
+  .btn1{
+    width: rem(20px);
+    height: rem(3px);
+    background-color:#40b8eb;
+    margin: 2px 0;
+    transition: .4s ;
+
+  }
+  .btn2 {
+    width: rem(25px);
+    height: rem(3px);
+    background-color:#40b8eb;
+    margin:2px 0;
+    transition: .4s ;
+  }
+  .btn3 {
+    width: rem(25px);
+    height: rem(3px);
+    background-color:#40b8eb;
+    margin:2px 0;
+    transition: .4s ;
   }
 }
 
@@ -69,9 +109,8 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
-justify-content: center;
-
+    align-items: center;
+    justify-content: center;
 
     .phone {
       width: rem(43px);
@@ -80,17 +119,20 @@ justify-content: center;
       line-height: 42px;
       border: 1px solid #d71919;
       border-radius: 50%;
+      margin-right: rem(20px);
 
     }
     .address_header {
 
+      padding-top: rem(30px);
       a {
         font-family: Intro;
         font-size: 17px;
         font-weight: 400;
         line-height: 1.64;
+
       }
-      p{
+      p {
         font-family: "Gotham Pro";
         font-size: 14px;
         font-weight: 300;
