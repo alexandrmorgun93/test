@@ -4,24 +4,33 @@
       margin-right: rem(10px);
     }
   }
+  .rent_of_rooms{
+    p{
+
+    }
+  }
 }
 
 @media only screen and (max-width: 1340px) {
+  .title_item {
+    font-size: rem(17px);
+  }
   .btn_mobile {
     visibility: visible;
+    z-index: 2;
+    justify-content: center;
     &.active {
 
       .btn1 {
         width: rem(25px);
         transform: rotate(-405deg) translate(-14px, 2px);
 
-
       }
       .btn2 {
-       opacity: 0;
+        opacity: 0;
 
       }
-     .btn3 {
+      .btn3 {
         transform: rotate(405deg) translate(-8px, 4px);;
 
       }
@@ -30,7 +39,7 @@
   }
 
   .menu_nav {
-    border: 1px solid red;
+
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -39,7 +48,10 @@
     opacity: 0;
     left: -150vw;
     transition: .3s;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
     &.active {
       opacity: 1;
       left: 0;
@@ -56,6 +68,36 @@
   .header_main {
     .container {
       align-items: center;
+    }
+  }
+
+}
+@media only screen and (max-width:1480px){
+  .rooms_calculations{
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    .rooms{
+      .rooms_head{
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header_right {
+    .btn {
+      margin-left: rem(100px);
+
+    }
+    .right_phone {
+      .address_header {
+        display: none;
+      }
     }
   }
 }

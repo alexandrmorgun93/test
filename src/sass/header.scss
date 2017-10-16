@@ -25,11 +25,7 @@
   }
 }
 
-.open {
-  position: absolute;
-  left: 100%;
-  transition: 1s scale;
-}
+
 
 .menu_nav {
   width: 100%;
@@ -127,14 +123,14 @@
       padding-top: rem(30px);
       a {
         font-family: Intro;
-        font-size: 17px;
+        font-size: rem(17px);
         font-weight: 400;
         line-height: 1.64;
 
       }
       p {
         font-family: "Gotham Pro";
-        font-size: 14px;
+        font-size: rem(14px);
         font-weight: 300;
         line-height: 2;
       }

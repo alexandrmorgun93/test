@@ -62,12 +62,12 @@ body {
   letter-spacing: 0.4px; }
 
 .container {
-  max-width: 93.75rem;
+  max-width: 92.5rem;
   padding: 0 0.3125rem;
   margin: 0 auto;
   width: 100%; }
 
-.title_item {
+.title {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -95,444 +95,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; }
-
-.clocks_work {
-  width: 100%;
-  padding-top: 3.4375rem; }
-  .clocks_work .title_item {
-    margin-bottom: 15rem; }
-
-.clocks_work_content {
-  background-image: url("../../img/clock_fon.jpg"); }
-  .clocks_work_content .container {
-    padding: 5rem;
-    background-color: #fff;
-    position: relative;
-    top: -9.6875rem;
-    box-shadow: 0 7px 16px rgba(1, 1, 1, 0.1); }
-    .clocks_work_content .container .clocks_rectangle {
-      width: 53px;
-      height: 188px;
-      border-radius: 1px;
-      background-color: #1f8ac6;
-      position: absolute;
-      left: -1.875rem;
-      top: -2.5rem;
-      z-index: -1; }
-    .clocks_work_content .container ul {
-      column-count: 2; }
-      .clocks_work_content .container ul li {
-        position: relative;
-        padding-left: 1.875rem;
-        margin-bottom: 1.875rem; }
-        .clocks_work_content .container ul li::before {
-          content: "";
-          display: block;
-          position: absolute;
-          width: 0.625rem;
-          height: 0.625rem;
-          background-color: #2fa9d2;
-          left: 0.0625rem;
-          top: 0.4375rem;
-          border-radius: 50%;
-          z-index: 5; }
-        .clocks_work_content .container ul li p {
-          margin-bottom: 20px; }
-          .clocks_work_content .container ul li p b {
-            font-weight: 700; }
-
-.container .title_item {
-  margin-top: 5rem; }
-
-.container .individual_customers_table {
-  display: flex;
-  width: 100%; }
-  .container .individual_customers_table p {
-    font-family: "Gotham Pro";
-    font-size: 20px;
-    font-weight: 700;
-    height: 6.5625rem;
-    width: 100%;
-    background-color: #40b8eb;
-    border-right: 0.0625rem solid #fff;
-    text-align: center;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; }
-    .container .individual_customers_table p:nth-child(odd) {
-      flex: 1 1 16.875rem; }
-    .container .individual_customers_table p:nth-child(even) {
-      flex: 1 1 58.75rem; }
-    .container .individual_customers_table p:last-child {
-      border-right: none; }
-
-.container .individual_customers_table-item {
-  display: flex;
-  width: 100%;
-  min-height: 3.125rem; }
-  .container .individual_customers_table-item p {
-    width: 100%;
-    font-family: "Gotham Pro";
-    font-size: 20px;
-    margin-bottom: 2px;
-    border-right: 0.0625rem solid #ffffff;
-    padding: 0.9375rem 0.3125rem;
-    text-align: center; }
-    .container .individual_customers_table-item p:nth-child(1) {
-      background-color: #c2e1ee;
-      flex: 1 1 16.875rem;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    .container .individual_customers_table-item p:nth-child(2) {
-      flex: 1 1 58.75rem;
-      background-color: #f7f7f7;
-      padding-left: 3.5%;
-      padding-right: 3.5%; }
-    .container .individual_customers_table-item p:nth-child(3) {
-      flex: 1 1 16.875rem;
-      background-color: #f7f7f7;
-      border-right: none; }
-
-.table_kids {
-  display: flex;
-  width: 100%; }
-  .table_kids p {
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 6.5625rem;
-    background-color: #40b8eb;
-    text-align: center;
-    font-family: "Gotham Pro";
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.5;
-    border-right: 0.0625rem solid #ffffff;
-    border-bottom: 0.0625rem solid #ffffff; }
-    .table_kids p span {
-      font-weight: 400; }
-    .table_kids p:nth-child(1) {
-      flex: 1 1 16.875rem; }
-    .table_kids p:nth-child(2) {
-      flex: 1 1 19.375rem; }
-    .table_kids p:nth-child(3) {
-      flex: 1 1 19.375rem; }
-    .table_kids p:nth-child(4) {
-      flex: 1 1 19.375rem; }
-    .table_kids p:nth-child(5) {
-      flex: 1 1 16.875rem; }
-
-.table_kids_item {
-  display: flex;
-  width: 100%; }
-  .table_kids_item p {
-    width: 100%;
-    display: flex;
-    height: 3.125rem;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    border-right: 0.0625rem solid #ffffff;
-    border-bottom: 0.0625rem solid #ffffff; }
-    .table_kids_item p span {
-      font-weight: 300; }
-    .table_kids_item p:nth-child(1) {
-      background-color: #c2e1ee;
-      flex: 1 1 16.875rem; }
-    .table_kids_item p:nth-child(2) {
-      background-color: #f7f7f7;
-      flex: 1 1 19.375rem; }
-    .table_kids_item p:nth-child(3) {
-      background-color: #f7f7f7;
-      flex: 1 1 19.375rem; }
-    .table_kids_item p:nth-child(4) {
-      background-color: #f7f7f7;
-      flex: 1 1 19.375rem; }
-    .table_kids_item p:nth-child(5) {
-      background-color: #f7f7f7;
-      flex: 1 1 16.875rem;
-      border-bottom: none; }
-
-.rent_of_rooms {
-  display: flex;
-  width: 100%; }
-  .rent_of_rooms p {
-    color: #ffffff;
-    font-family: "Gotham Pro";
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.6;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 6.5625rem;
-    background-color: #40b8eb;
-    border-right: 0.0625rem solid #ffffff;
-    border-bottom: 0.0625rem solid #ffffff; }
-    .rent_of_rooms p span {
-      font-weight: 300; }
-    .rent_of_rooms p:nth-child(1) {
-      flex: 1 1 16.875rem; }
-    .rent_of_rooms p:nth-child(n+2) {
-      flex: 1 1 25.3125rem; }
-
-.rent_of_rooms-item {
-  display: flex;
-  width: 100%; }
-  .rent_of_rooms-item p {
-    color: #252a2d;
-    font-family: "Gotham Pro";
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 3.125rem;
-    border-right: 0.0625rem solid #ffffff;
-    border-bottom: 0.0625rem solid #ffffff; }
-    .rent_of_rooms-item p:nth-child(1) {
-      background-color: #c2e1ee;
-      flex: 1 1 16.875rem; }
-    .rent_of_rooms-item p:nth-child(n+2) {
-      background-color: #f7f7f7;
-      flex: 1 1 25.3125rem; }
-
-.rooms_calculations {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-  .rooms_calculations .rooms {
-    display: flex;
-    flex-direction: column; }
-    .rooms_calculations .rooms .title_room {
-      font-family: Intro;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 2.05;
-      text-align: center;
-      margin: 4.6875rem 0 3.125rem 0; }
-    .rooms_calculations .rooms .rooms_head {
-      display: flex;
-      width: 100%; }
-      .rooms_calculations .rooms .rooms_head p {
-        width: 100%;
-        font-size: 17px;
-        font-weight: 700;
-        line-height: 1.17;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        max-width: 5rem;
-        background-color: #40b8eb;
-        border-bottom: 0.0625rem solid #ffffff;
-        border-right: 0.0625rem solid #ffffff;
-        color: #ffffff;
-        padding: 1.5625rem 0.9375rem 1.5625rem 0.9375rem; }
-        .rooms_calculations .rooms .rooms_head p span {
-          font-weight: 300;
-          font-size: 13px; }
-    .rooms_calculations .rooms .rooms_item {
-      display: flex;
-      width: 100%; }
-      .rooms_calculations .rooms .rooms_item p {
-        width: 100%;
-        max-width: 5rem;
-        padding: 1.5625rem 0 1.5625rem 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 17px;
-        font-weight: 700;
-        line-height: 1.17;
-        border-bottom: 0.0625rem solid #ffffff;
-        border-right: 0.0625rem solid #ffffff; }
-        .rooms_calculations .rooms .rooms_item p:nth-child(1) {
-          background-color: #c2e1ee; }
-        .rooms_calculations .rooms .rooms_item p:nth-child(n+2) {
-          background-color: #f7f7f7; }
-
-.fon {
-  width: 100%;
-  margin-top: 3.125rem;
-  position: relative;
-  top: 0;
-  left: 0; }
-  .fon .fon_item {
-    width: 100%;
-    position: relative;
-    background-image: url("../../img/dsc-4716.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    height: 30rem; }
-    .fon .fon_item::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.9);
-      top: 0;
-      left: 0;
-      z-index: 1; }
-  .fon .form_block {
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background: #ffffff;
-    max-width: 41.5625rem;
-    width: 100%;
-    box-shadow: 0 11px 16px rgba(1, 1, 1, 0.1);
-    display: flex; }
-    .fon .form_block .my_form {
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto; }
-      .fon .form_block .my_form .inp {
-        width: 27.1875rem;
-        height: 3.125rem;
-        border: none;
-        text-align: center;
-        margin-top: 1.25rem;
-        color: #252a2d;
-        font-family: "Gotham Pro";
-        font-size: 17px;
-        font-weight: 300;
-        line-height: 1.6; }
-      .fon .form_block .my_form textarea {
-        box-shadow: inset 0 1px 24px rgba(1, 1, 1, 0.03);
-        background-color: #ffffff;
-        margin-top: 1.25rem;
-        color: #252a2d;
-        text-align: center;
-        font-family: "Gotham Pro";
-        font-size: 17px;
-        font-weight: 300;
-        line-height: 1.6;
-        border: none;
-        padding-top: 1.875rem; }
-      .fon .form_block .my_form .form_login {
-        box-shadow: inset 0 1px 24px rgba(1, 1, 1, 0.03);
-        background-color: #ffffff; }
-      .fon .form_block .my_form .form_email {
-        box-shadow: inset 0 1px 24px rgba(1, 1, 1, 0.09);
-        background-color: #fcfcfc; }
-      .fon .form_block .my_form .form_tema {
-        box-shadow: inset 0 1px 24px rgba(1, 1, 1, 0.03);
-        background-color: #ffffff; }
-      .fon .form_block .my_form .form_submit {
-        width: 15.625rem;
-        height: 3.125rem;
-        box-shadow: 0 1px 13px rgba(64, 184, 235, 0.36);
-        border-radius: 24px;
-        border: 1px solid #40b8eb;
-        background: #ffffff;
-        margin-top: 3.75rem;
-        color: #40b8eb;
-        font-family: Intro;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.75;
-        margin: 3.125rem auto; }
-
-#map {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  z-index: 1; }
-
-.fon .title_item {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  font-family: Intro;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 0.9;
-  text-transform: uppercase; }
-
-.fon .container {
-  position: relative;
-  z-index: 2;
-  display: flex; }
-  .fon .container .fon_right {
-    margin-top: 10rem; }
-    .fon .container .fon_right::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 24.6875rem;
-      height: 20.625rem;
-      background-color: #40b8eb;
-      bottom: 3.125rem;
-      right: 0;
-      z-index: -1; }
-    .fon .container .fon_right .title_item {
-      margin-bottom: 5.625rem;
-      padding-left: 20%; }
-  .fon .container .info_adress {
-    box-shadow: 0 11px 16px rgba(1, 1, 1, 0.1);
-    max-width: 51.25rem;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    position: relative;
-    padding: 4rem 4.0625rem 4.0625rem 5.3125rem;
-    z-index: 1; }
-    .fon .container .info_adress::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 11.875rem;
-      height: 3.125rem;
-      background-color: #1f8ac6;
-      top: -3.125rem;
-      left: -5rem;
-      z-index: 2; }
-    .fon .container .info_adress .up_scroll {
-      position: absolute;
-      top: -3.75rem;
-      right: 3.75rem; }
-    .fon .container .info_adress h2 {
-      font-family: "Gotham Pro";
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 1.4;
-      margin-bottom: 1.875rem; }
-    .fon .container .info_adress p {
-      font-family: "Gotham Pro";
-      font-size: 17px;
-      font-weight: 300;
-      line-height: 2.3; }
-  .fon .container::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 23.125rem;
-    height: 20.625rem;
-    background-color: #40b8eb;
-    bottom: -6.25rem;
-    left: 25%;
-    z-index: -2; }
 
 /*Intro*/
 @font-face {
@@ -577,11 +139,6 @@ body {
     display: flex;
     justify-content: space-between;
     height: 8.1875rem; }
-
-.open {
-  position: absolute;
-  left: 100%;
-  transition: 1s scale; }
 
 .menu_nav {
   width: 100%;
@@ -660,12 +217,12 @@ body {
       padding-top: 1.875rem; }
       .header_right .right_phone .address_header a {
         font-family: Intro;
-        font-size: 17px;
+        font-size: 1.0625rem;
         font-weight: 400;
         line-height: 1.64; }
       .header_right .right_phone .address_header p {
         font-family: "Gotham Pro";
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 300;
         line-height: 2; }
     .header_right .right_phone .en {
@@ -676,13 +233,563 @@ body {
       border: 1px solid #a0b2ba;
       border-radius: 50%; }
 
+/* BEGIN CLOCKS WORKS BLOCK*/
+.clocks_work {
+  width: 100%;
+  padding-top: 3.4375rem; }
+  .clocks_work .title {
+    margin-bottom: 15rem; }
+
+.clocks_work_content {
+  background-image: url("../../img/clock_fon.jpg"); }
+  .clocks_work_content .container {
+    padding: 5rem;
+    background-color: #fff;
+    position: relative;
+    top: -9.6875rem;
+    box-shadow: 0 7px 16px rgba(1, 1, 1, 0.1); }
+    .clocks_work_content .container .clocks_rectangle {
+      width: 53px;
+      height: 188px;
+      border-radius: 1px;
+      background-color: #1f8ac6;
+      position: absolute;
+      left: -1.875rem;
+      top: -2.5rem;
+      z-index: -1; }
+    .clocks_work_content .container ul {
+      column-count: 2; }
+      .clocks_work_content .container ul li {
+        position: relative;
+        padding-left: 1.875rem;
+        margin-bottom: 1.875rem; }
+        .clocks_work_content .container ul li::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 0.625rem;
+          height: 0.625rem;
+          background-color: #2fa9d2;
+          left: 0.0625rem;
+          top: 0.4375rem;
+          border-radius: 50%;
+          z-index: 5; }
+        .clocks_work_content .container ul li p {
+          margin-bottom: 20px; }
+          .clocks_work_content .container ul li p b {
+            font-weight: 700; }
+
+/*END CLOCKS_WORK BLOCK*/
+/*BEGIN PRICE_ROOM BLOCK*/
+.container .title {
+  margin-top: 5rem; }
+
+.container .individual_customers_table {
+  display: flex;
+  width: 100%; }
+  .container .individual_customers_table p {
+    font-family: "Gotham Pro";
+    font-size: 20px;
+    font-weight: 700;
+    height: 6.5625rem;
+    width: 100%;
+    background-color: #40b8eb;
+    border-right: 0.0625rem solid #fff;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .container .individual_customers_table p:nth-child(odd) {
+      flex: 1 1 16.875rem; }
+    .container .individual_customers_table p:nth-child(even) {
+      flex: 1 1 58.75rem; }
+    .container .individual_customers_table p:last-child {
+      border-right: none; }
+
+.container .individual_customers_table-item {
+  display: flex;
+  width: 100%;
+  min-height: 3.125rem; }
+  .container .individual_customers_table-item p {
+    width: 100%;
+    font-family: "Gotham Pro";
+    font-size: 20px;
+    margin-bottom: 2px;
+    border-right: 0.0625rem solid #ffffff;
+    padding: 0.9375rem 0.3125rem;
+    text-align: center; }
+    .container .individual_customers_table-item p:nth-child(1) {
+      background-color: #c2e1ee;
+      flex: 1 1 16.875rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .container .individual_customers_table-item p:nth-child(2) {
+      flex: 1 1 58.75rem;
+      background-color: #f7f7f7;
+      padding-left: 3.5%;
+      padding-right: 3.5%; }
+    .container .individual_customers_table-item p:nth-child(3) {
+      flex: 1 1 16.875rem;
+      background-color: #f7f7f7;
+      border-right: none; }
+
+/*END PRICE_ROOM BLOCK*/
+/* BEGIN TABLE KIDS BLOCK:*/
+.table_kids {
+  display: flex;
+  width: 100%; }
+  .table_kids p {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 6.5625rem;
+    background-color: #40b8eb;
+    text-align: center;
+    font-family: "Gotham Pro";
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5;
+    border-right: 0.0625rem solid #ffffff;
+    border-bottom: 0.0625rem solid #ffffff; }
+    .table_kids p span {
+      font-weight: 400; }
+    .table_kids p:nth-child(1) {
+      flex: 1 1 16.875rem; }
+    .table_kids p:nth-child(2) {
+      flex: 1 1 19.375rem; }
+    .table_kids p:nth-child(3) {
+      flex: 1 1 19.375rem; }
+    .table_kids p:nth-child(4) {
+      flex: 1 1 19.375rem; }
+    .table_kids p:nth-child(5) {
+      flex: 1 1 16.875rem; }
+
+.table_kids_item {
+  display: flex;
+  width: 100%; }
+  .table_kids_item p {
+    width: 100%;
+    display: flex;
+    height: 3.125rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border-right: 0.0625rem solid #ffffff;
+    border-bottom: 0.0625rem solid #ffffff; }
+    .table_kids_item p span {
+      font-weight: 300; }
+    .table_kids_item p:nth-child(1) {
+      background-color: #c2e1ee;
+      flex: 1 1 16.875rem; }
+    .table_kids_item p:nth-child(2) {
+      background-color: #f7f7f7;
+      flex: 1 1 19.375rem; }
+    .table_kids_item p:nth-child(3) {
+      background-color: #f7f7f7;
+      flex: 1 1 19.375rem; }
+    .table_kids_item p:nth-child(4) {
+      background-color: #f7f7f7;
+      flex: 1 1 19.375rem; }
+    .table_kids_item p:nth-child(5) {
+      background-color: #f7f7f7;
+      flex: 1 1 16.875rem;
+      border-bottom: none; }
+
+/*END TABLE KIDS BLOCK*/
+/*BEGIN rent of rooms*/
+.rent_of_rooms {
+  display: flex;
+  width: 100%; }
+  .rent_of_rooms p {
+    color: #ffffff;
+    font-family: "Gotham Pro";
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 1.6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #40b8eb;
+    border-right: 0.0625rem solid #ffffff;
+    border-bottom: 0.0625rem solid #ffffff; }
+    .rent_of_rooms p span {
+      font-weight: 300; }
+    .rent_of_rooms p:nth-child(1) {
+      flex: 1 1 100%; }
+    .rent_of_rooms p:nth-child(n+2) {
+      flex: 1 1 100%; }
+
+.rent_of_rooms-item {
+  display: flex;
+  width: 100%; }
+  .rent_of_rooms-item p {
+    color: #252a2d;
+    font-family: "Gotham Pro";
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 3.125rem;
+    border-right: 0.0625rem solid #ffffff;
+    border-bottom: 0.0625rem solid #ffffff; }
+    .rent_of_rooms-item p:nth-child(1) {
+      background-color: #c2e1ee;
+      flex: 1 1 16.875rem; }
+    .rent_of_rooms-item p:nth-child(n+2) {
+      background-color: #f7f7f7;
+      flex: 1 1 25.3125rem; }
+
+/*END rent of rooms*/
+/* BEGIN ROOMS CALCULATION BLOCK*/
+.rooms_calculations {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .rooms_calculations .rooms {
+    display: flex;
+    flex-direction: column; }
+    .rooms_calculations .rooms .title_room {
+      font-family: Intro;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 2.05;
+      text-align: center;
+      margin: 4.6875rem 0 3.125rem 0; }
+    .rooms_calculations .rooms .rooms_head {
+      display: flex;
+      width: 100%; }
+      .rooms_calculations .rooms .rooms_head p {
+        width: 100%;
+        font-size: 1.0625rem;
+        font-weight: 700;
+        line-height: 1.17;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 5rem;
+        background-color: #40b8eb;
+        border-bottom: 0.0625rem solid #ffffff;
+        border-right: 0.0625rem solid #ffffff;
+        color: #ffffff;
+        padding: 1.5625rem 0.9375rem 1.5625rem 0.9375rem; }
+        .rooms_calculations .rooms .rooms_head p span {
+          font-weight: 300;
+          font-size: 13px; }
+    .rooms_calculations .rooms .rooms_item {
+      display: flex;
+      width: 100%; }
+      .rooms_calculations .rooms .rooms_item p {
+        width: 100%;
+        max-width: 5rem;
+        padding: 1.5625rem 1.25rem 1.5625rem 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.0625rem;
+        font-weight: 700;
+        line-height: 1.17;
+        border-bottom: 0.0625rem solid #ffffff;
+        border-right: 0.0625rem solid #ffffff; }
+        .rooms_calculations .rooms .rooms_item p:nth-child(1) {
+          background-color: #c2e1ee; }
+        .rooms_calculations .rooms .rooms_item p:nth-child(n+2) {
+          background-color: #f7f7f7; }
+
+.babysittingService {
+  width: 100%;
+  padding-top: 3.4375rem; }
+  .babysittingService .title {
+    margin-bottom: 1.875rem; }
+  .babysittingService .title_item {
+    margin-bottom: 13.125rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center; }
+
+.babysittingService_content {
+  position: relative;
+  z-index: -2;
+  background-image: url("../../img/clock_fon.jpg"); }
+  .babysittingService_content .container {
+    background-color: #fff;
+    position: relative;
+    top: -10rem;
+    box-shadow: 0 7px 16px rgba(1, 1, 1, 0.1); }
+    .babysittingService_content .container::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 3.4375rem;
+      height: 11.875rem;
+      background-color: #1f8ac6;
+      z-index: -1;
+      left: -1.25rem;
+      top: -2.5rem;
+      -webkit-border-radius: 0.0625rem;
+      -moz-border-radius: 0.0625rem;
+      border-radius: 0.0625rem; }
+    .babysittingService_content .container::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 3.4375rem;
+      height: 11.875rem;
+      background-color: #1f8ac6;
+      z-index: -1;
+      right: -1.25rem;
+      bottom: -2.5rem;
+      -webkit-border-radius: 0.0625rem;
+      -moz-border-radius: 0.0625rem;
+      border-radius: 0.0625rem; }
+    .babysittingService_content .container .main_content {
+      display: flex;
+      position: relative;
+      padding: 1.875rem 3.75rem 0 7.5rem; }
+      .babysittingService_content .container .main_content .content_text {
+        padding-top: 5.625rem;
+        padding-right: 6.25rem;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 1.64; }
+      .babysittingService_content .container .main_content .content_img {
+        position: relative;
+        top: 2.5rem;
+        width: 100%;
+        height: 35rem; }
+        .babysittingService_content .container .main_content .content_img img {
+          object-fit: cover; }
+
+.advantages_section {
+  width: 100%; }
+  .advantages_section .title {
+    margin-top: 8.125rem;
+    margin-bottom: 5.625rem; }
+  .advantages_section .advantages_content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0.3125rem;
+    width: 100%; }
+    .advantages_section .advantages_content .advantages {
+      width: 100%;
+      flex: 1 1 30%;
+      padding: 0 2.5rem;
+      margin-bottom: 3.125rem; }
+      .advantages_section .advantages_content .advantages .advantages_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 8.75rem;
+        height: 5.9375rem;
+        background-color: #40b8eb;
+        box-shadow: 0 6px 18px rgba(64, 184, 235, 0.31);
+        font-size: 3.75rem;
+        color: #ffffff; }
+      .advantages_section .advantages_content .advantages p {
+        margin-top: 3.125rem;
+        text-align: center;
+        color: #252a2d;
+        font-family: "Gotham Pro";
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 1.64; }
+
+.fon .title_item {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  font-family: Intro;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 0.9;
+  text-transform: uppercase; }
+
+.fon .container {
+  position: relative;
+  z-index: 2;
+  display: flex; }
+  .fon .container .fon_right {
+    margin-top: 10rem; }
+    .fon .container .fon_right::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 24.6875rem;
+      height: 20.625rem;
+      background-color: #40b8eb;
+      bottom: 3.125rem;
+      right: 0;
+      z-index: -1; }
+    .fon .container .fon_right .title_item {
+      margin-bottom: 5.625rem;
+      padding-left: 20%; }
+  .fon .container .info_adress {
+    box-shadow: 0 11px 16px rgba(1, 1, 1, 0.1);
+    max-width: 51.25rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+    padding: 4rem 4.0625rem 4.0625rem 5.3125rem;
+    z-index: 1; }
+    .fon .container .info_adress::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 11.875rem;
+      height: 3.125rem;
+      background-color: #1f8ac6;
+      top: -3.125rem;
+      left: -5rem;
+      z-index: 2; }
+    .fon .container .info_adress .up_scroll {
+      position: absolute;
+      top: -3.75rem;
+      right: 3.75rem; }
+    .fon .container .info_adress h2 {
+      font-family: "Gotham Pro";
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.4;
+      margin-bottom: 1.875rem; }
+    .fon .container .info_adress p {
+      font-family: "Gotham Pro";
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 2.3; }
+  .fon .container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 23.125rem;
+    height: 20.625rem;
+    background-color: #40b8eb;
+    bottom: -6.25rem;
+    left: 25%;
+    z-index: -2; }
+
+.fon {
+  width: 100%;
+  margin-top: 3.125rem;
+  position: relative;
+  top: 0;
+  left: 0; }
+  .fon .fon_item {
+    width: 100%;
+    position: relative;
+    background-image: url("../../img/dsc-4716.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 30rem; }
+    .fon .fon_item::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      top: 0;
+      left: 0;
+      z-index: 1; }
+  .fon .form_block {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #ffffff;
+    max-width: 41.5625rem;
+    width: 100%;
+    box-shadow: 0 11px 16px rgba(1, 1, 1, 0.1);
+    display: flex; }
+    .fon .form_block .my_form {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto; }
+      .fon .form_block .my_form .inp {
+        width: 27.1875rem;
+        height: 3.125rem;
+        border: none;
+        text-align: center;
+        margin-top: 1.25rem;
+        color: #252a2d;
+        font-family: "Gotham Pro";
+        font-size: 1.0625rem;
+        font-weight: 300;
+        line-height: 1.6; }
+      .fon .form_block .my_form textarea {
+        box-shadow: inset 0 1px 24px rgba(1, 1, 1, 0.03);
+        background-color: #ffffff;
+        margin-top: 1.25rem;
+        color: #252a2d;
+        text-align: center;
+        font-family: "Gotham Pro";
+        font-size: 1.0625rem;
+        font-weight: 300;
+        line-height: 1.6;
+        border: none;
+        padding-top: 1.875rem; }
+      .fon .form_block .my_form .form_login {
+        box-shadow: inset 0 1px 24px rgba(1, 1, 1, 0.03);
+        background-color: #ffffff; }
+      .fon .form_block .my_form .form_email {
+        box-shadow: inset 0 1px 24px rgba(1, 1, 1, 0.09);
+        background-color: #fcfcfc; }
+      .fon .form_block .my_form .form_tema {
+        box-shadow: inset 0 1px 24px rgba(1, 1, 1, 0.03);
+        background-color: #ffffff; }
+      .fon .form_block .my_form .form_submit {
+        width: 15.625rem;
+        height: 3.125rem;
+        box-shadow: 0 1px 13px rgba(64, 184, 235, 0.36);
+        border-radius: 24px;
+        border: 1px solid #40b8eb;
+        background: #ffffff;
+        margin-top: 3.75rem;
+        color: #40b8eb;
+        font-family: Intro;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.75;
+        margin: 3.125rem auto; }
+
+#map {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1; }
+
 @media only screen and (max-width: 1330px) {
   .menu_nav a {
     margin-right: 0.625rem; } }
 
 @media only screen and (max-width: 1340px) {
+  .title_item {
+    font-size: 1.0625rem; }
   .btn_mobile {
-    visibility: visible; }
+    visibility: visible;
+    z-index: 2;
+    justify-content: center; }
     .btn_mobile.active .btn1 {
       width: 1.5625rem;
       transform: rotate(-405deg) translate(-14px, 2px); }
@@ -691,7 +798,6 @@ body {
     .btn_mobile.active .btn3 {
       transform: rotate(405deg) translate(-8px, 4px); }
   .menu_nav {
-    border: 1px solid red;
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -700,7 +806,10 @@ body {
     opacity: 0;
     left: -150vw;
     transition: .3s;
-    justify-content: space-around; }
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff; }
     .menu_nav.active {
       opacity: 1;
       left: 0;
@@ -709,5 +818,20 @@ body {
     display: flex; }
   .header_main .container {
     align-items: center; } }
+
+@media only screen and (max-width: 1480px) {
+  .rooms_calculations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%; } }
+
+@media only screen and (max-width: 600px) {
+  .header_right .btn {
+    margin-left: 6.25rem; }
+  .header_right .right_phone .address_header {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map*/

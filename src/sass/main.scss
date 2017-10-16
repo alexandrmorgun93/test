@@ -3,13 +3,10 @@
 @import "сomponents-sass/mixin.scss";
 @import 'reset.scss';
 @import 'common.scss';
-@import 'clocks_worcks';
-@import 'Tariffication_of_visits_to_individual_clients.scss';
-@import 'clients_with_children.scss';
-@import 'rent_of_rooms.scss';
-@import "room_calculations.scss";
-@import 'form.scss';
-@import 'info_adress.scss';
 @import "font-face.scss";
 @import "header";
+@import "content_pricePolicy.scss";
+@import "nany.scss";
+@import 'footer';
+@import 'form.scss';
 @import "media.scss";

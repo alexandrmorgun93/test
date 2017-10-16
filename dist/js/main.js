@@ -68,7 +68,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(2);
+module.exports = __webpack_require__(3);
 
 
 /***/ }),
@@ -85,7 +85,7 @@ module.exports = __webpack_require__(2);
 
 
     if (btnNav !== null && nav !== null) {
-        (__webpack_require__(7))(btnNav, nav);
+        (__webpack_require__(2))(btnNav, nav);
     }
 
 
@@ -96,22 +96,18 @@ module.exports = __webpack_require__(2);
 /* 2 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */
-/***/ (function(module, exports) {
-
 module.exports = (btn, nav) => {
     btn.addEventListener('click', function () {
         this.classList.toggle('active');
         nav.classList.toggle('active');
     })
 };
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
