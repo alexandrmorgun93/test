@@ -26,7 +26,7 @@
     box-shadow: 0 7px 16px rgba(1, 1, 1, 0.1);
 
     &::before {
-      @include before_fig(rem(55px), rem(190px), #1f8ac6);
+      @include before_fig(rem(55px), rem(190px), $skyBlue_color);
       z-index: -1;
       left: rem(-20px);
       top: rem(-40px);
@@ -35,7 +35,7 @@
       border-radius: rem(1px);
     }
     &::after {
-      @include before_fig(rem(55px), rem(190px), #1f8ac6);
+      @include before_fig(rem(55px), rem(190px), $skyBlue_color);
       z-index: -1;
       right: rem(-20px);
       bottom: rem(-40px);
@@ -67,6 +67,7 @@
   }
 }
 
+/*BEGIN ADVANTAGES BLOCK*/
 .advantages_section {
   width: 100%;
   .title {
@@ -78,7 +79,6 @@
     flex-wrap: wrap;
     padding: 0 rem(5px);
     width: 100%;
-
 
     .advantages {
       width: 100%;
@@ -98,7 +98,7 @@
         font-size: rem(60px);
         color: #ffffff;
       }
-      p{
+      p {
         margin-top: rem(50px);
         text-align: center;
         color: #252a2d;
@@ -110,3 +110,229 @@
     }
   }
 }
+
+/*END ADVANTAGES BLOCK*/
+/*BEGIN NANNIES BLOCK*/
+
+.nannies_container {
+
+  width: 100%;
+  position: relative;
+
+  .title {
+    margin-top: rem(100px);
+    margin-bottom: rem(80px);
+  }
+  .slide_fon {
+    width: 100%;
+    height: rem(720px);
+    position: absolute;
+
+  }
+}
+
+.slider_content {
+  width: 100%;
+  position: relative;
+  height: rem(720px);
+  &::before {
+    @include before_fig(55%, 55%, rgba(255, 255, 255, .8));
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    @include before_fig(55%, 70%, rgba(255, 255, 255, .8));
+    bottom: 0;
+    right: 0;
+  }
+  .slider_nannies_container {
+    width: 100%;
+    max-width: rem(1480px);
+    margin-top: 10%;
+    position: relative;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    margin: 0 auto;
+    padding-top: rem(80px);
+
+    .nannies_slide_item {
+      width: 100%;
+      .nannie_img {
+        height: rem(420px);
+        box-shadow: 0 11px 16px rgba(1, 1, 1, 0.1);
+        img {
+          height: rem(420px);
+        }
+      }
+      .nannie_text {
+        box-shadow: 0 11px 16px rgba(1, 1, 1, 0.1);
+        background-color: #fff;
+        text-align: center;
+        font-size: rem(20px);
+        font-weight: 300;
+        line-height: 1.65;
+        padding: rem(10px);
+        span {
+          display: flex;
+          justify-content: center;
+          color: #40b8eb;
+          font-size: rem(30px);
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .slider_control {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    z-index: 1;
+    width: rem(215px);
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #ffffff;
+    &::before {
+      @include before_fig(rem(1px), rem(70px), #1f8ac6);
+      bottom: 0;
+      left: 50%;
+    }
+    .left_btn, .right_btn {
+      border: none;
+      background-color: #ffffff;
+      width: rem(30px);
+      height: rem(60px);
+      font-size: rem(30px);
+      color: #40b8eb;
+      cursor: pointer;
+      i {
+        position: relative;
+      }
+    }
+    .left_btn {
+      i {
+        top: rem(-10px);
+      }
+    }
+
+  }
+}
+
+/*END NANNIES BLOCK*/
+/*BEGIN KIDS ROOM*/
+.kids_room {
+  width: 100%;
+  .title {
+    margin: rem(100px) 0 rem(50px) 0;
+  }
+  .container {
+    width: 100%;
+
+    .kids_slider_wrap {
+      position: relative;
+      width: 100%;
+      height: rem(580px);
+      .kids_slider {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;
+        overflow: hidden;
+
+        div {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          overflow: hidden;
+
+        }
+
+        .slides1 {
+          top: 0;
+          left: 0;
+          width: 60%;
+          height: 100%;
+        }
+        .slides2 {
+          top: 0;
+          right: 0;
+          width: 40%;
+          height: 50%;
+        }
+        .slides3 {
+          bottom: 0;
+          right: 0;
+          width: 40%;
+          height: 50%;
+        }
+        img {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .slider_control {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: rem(100px);
+        height: rem(150px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #40b8eb;
+        align-items: flex-end;
+        background-color: #ffffff;
+        &::before {
+          @include before_fig(rem(1px), rem(70px), #1f8ac6);
+          bottom: 0;
+          left: 50%;
+        }
+        .batons {
+          .left_btn, .right_btn {
+            border: none;
+            background-color: #ffffff;
+            width: rem(30px);
+            height: rem(60px);
+            font-size: rem(25px);
+            color: #40b8eb;
+            cursor: pointer;
+            i {
+              position: relative;
+            }
+          }
+          .left_btn {
+            i {
+              top: rem(-10px);
+            }
+          }
+        }
+        .dote {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 10%;
+
+          i {
+            margin-top: rem(5px);
+            width: rem(11px);
+            height: (12px);
+            border: 1px solid #1f8ac6;
+            border-radius: 50%;
+            border: 1px solid #1f8ac6;
+          }
+        }
+
+      }
+    }
+
+  }
+
+}
+
+/*END KIDS ROOM*/

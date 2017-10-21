@@ -74,7 +74,7 @@ body {
   line-height: 0.9;
   font-family: "Intro", sans-serif; }
 
-.prise_room .title_item {
+.prise_room .title {
   margin-bottom: 5rem; }
 
 .line_bottom {
@@ -95,6 +95,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; }
+
+.nannies_container {
+  width: 100%; }
+  .nannies_container .title {
+    margin-top: 100px; }
 
 /*Intro*/
 @font-face {
@@ -576,6 +581,7 @@ body {
         .babysittingService_content .container .main_content .content_img img {
           object-fit: cover; }
 
+/*BEGIN ADVANTAGES BLOCK*/
 .advantages_section {
   width: 100%; }
   .advantages_section .title {
@@ -611,98 +617,212 @@ body {
         font-weight: 300;
         line-height: 1.64; }
 
-.fon .title_item {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  font-family: Intro;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 0.9;
-  text-transform: uppercase; }
+/*END ADVANTAGES BLOCK*/
+/*BEGIN NANNIES BLOCK*/
+.nannies_container {
+  width: 100%;
+  position: relative; }
+  .nannies_container .title {
+    margin-top: 6.25rem;
+    margin-bottom: 5rem; }
+  .nannies_container .slide_fon {
+    width: 100%;
+    height: 45rem;
+    position: absolute; }
 
-.fon .container {
+.slider_content {
+  width: 100%;
   position: relative;
-  z-index: 2;
-  display: flex; }
-  .fon .container .fon_right {
-    margin-top: 10rem; }
-    .fon .container .fon_right::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 24.6875rem;
-      height: 20.625rem;
-      background-color: #40b8eb;
-      bottom: 3.125rem;
-      right: 0;
-      z-index: -1; }
-    .fon .container .fon_right .title_item {
-      margin-bottom: 5.625rem;
-      padding-left: 20%; }
-  .fon .container .info_adress {
-    box-shadow: 0 11px 16px rgba(1, 1, 1, 0.1);
-    max-width: 51.25rem;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    position: relative;
-    padding: 4rem 4.0625rem 4.0625rem 5.3125rem;
-    z-index: 1; }
-    .fon .container .info_adress::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 11.875rem;
-      height: 3.125rem;
-      background-color: #1f8ac6;
-      top: -3.125rem;
-      left: -5rem;
-      z-index: 2; }
-    .fon .container .info_adress .up_scroll {
-      position: absolute;
-      top: -3.75rem;
-      right: 3.75rem; }
-    .fon .container .info_adress h2 {
-      font-family: "Gotham Pro";
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 1.4;
-      margin-bottom: 1.875rem; }
-    .fon .container .info_adress p {
-      font-family: "Gotham Pro";
-      font-size: 17px;
-      font-weight: 300;
-      line-height: 2.3; }
-  .fon .container::after {
+  height: 45rem; }
+  .slider_content::before {
     content: "";
     display: block;
     position: absolute;
-    width: 23.125rem;
-    height: 20.625rem;
-    background-color: #40b8eb;
-    bottom: -6.25rem;
-    left: 25%;
-    z-index: -2; }
+    width: 55%;
+    height: 55%;
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 0;
+    left: 0; }
+  .slider_content::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 55%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.8);
+    bottom: 0;
+    right: 0; }
+  .slider_content .slider_nannies_container {
+    width: 100%;
+    max-width: 92.5rem;
+    margin-top: 10%;
+    position: relative;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 5rem; }
+    .slider_content .slider_nannies_container .nannies_slide_item {
+      width: 100%; }
+      .slider_content .slider_nannies_container .nannies_slide_item .nannie_img {
+        height: 26.25rem;
+        box-shadow: 0 11px 16px rgba(1, 1, 1, 0.1); }
+        .slider_content .slider_nannies_container .nannies_slide_item .nannie_img img {
+          height: 26.25rem; }
+      .slider_content .slider_nannies_container .nannies_slide_item .nannie_text {
+        box-shadow: 0 11px 16px rgba(1, 1, 1, 0.1);
+        background-color: #fff;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.65;
+        padding: 0.625rem; }
+        .slider_content .slider_nannies_container .nannies_slide_item .nannie_text span {
+          display: flex;
+          justify-content: center;
+          color: #40b8eb;
+          font-size: 1.875rem;
+          font-weight: 700; }
+  .slider_content .slider_control {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    z-index: 1;
+    width: 13.4375rem;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #ffffff; }
+    .slider_content .slider_control::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0.0625rem;
+      height: 4.375rem;
+      background-color: #1f8ac6;
+      bottom: 0;
+      left: 50%; }
+    .slider_content .slider_control .left_btn, .slider_content .slider_control .right_btn {
+      border: none;
+      background-color: #ffffff;
+      width: 1.875rem;
+      height: 3.75rem;
+      font-size: 1.875rem;
+      color: #40b8eb;
+      cursor: pointer; }
+      .slider_content .slider_control .left_btn i, .slider_content .slider_control .right_btn i {
+        position: relative; }
+    .slider_content .slider_control .left_btn i {
+      top: -0.625rem; }
 
-.fon {
+/*END NANNIES BLOCK*/
+/*BEGIN KIDS ROOM*/
+.kids_room {
+  width: 100%; }
+  .kids_room .title {
+    margin: 6.25rem 0 3.125rem 0; }
+  .kids_room .container {
+    width: 100%; }
+    .kids_room .container .kids_slider_wrap {
+      position: relative;
+      width: 100%;
+      height: 36.25rem; }
+      .kids_room .container .kids_slider_wrap .kids_slider {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;
+        overflow: hidden; }
+        .kids_room .container .kids_slider_wrap .kids_slider div {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          overflow: hidden; }
+        .kids_room .container .kids_slider_wrap .kids_slider .slides1 {
+          top: 0;
+          left: 0;
+          width: 60%;
+          height: 100%; }
+        .kids_room .container .kids_slider_wrap .kids_slider .slides2 {
+          top: 0;
+          right: 0;
+          width: 40%;
+          height: 50%; }
+        .kids_room .container .kids_slider_wrap .kids_slider .slides3 {
+          bottom: 0;
+          right: 0;
+          width: 40%;
+          height: 50%; }
+        .kids_room .container .kids_slider_wrap .kids_slider img {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          object-fit: cover; }
+      .kids_room .container .kids_slider_wrap .slider_control {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 6.25rem;
+        height: 9.375rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #40b8eb;
+        align-items: flex-end;
+        background-color: #ffffff; }
+        .kids_room .container .kids_slider_wrap .slider_control::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 0.0625rem;
+          height: 4.375rem;
+          background-color: #1f8ac6;
+          bottom: 0;
+          left: 50%; }
+        .kids_room .container .kids_slider_wrap .slider_control .batons .left_btn, .kids_room .container .kids_slider_wrap .slider_control .batons .right_btn {
+          border: none;
+          background-color: #ffffff;
+          width: 1.875rem;
+          height: 3.75rem;
+          font-size: 1.5625rem;
+          color: #40b8eb;
+          cursor: pointer; }
+          .kids_room .container .kids_slider_wrap .slider_control .batons .left_btn i, .kids_room .container .kids_slider_wrap .slider_control .batons .right_btn i {
+            position: relative; }
+        .kids_room .container .kids_slider_wrap .slider_control .batons .left_btn i {
+          top: -0.625rem; }
+        .kids_room .container .kids_slider_wrap .slider_control .dote {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 10%; }
+          .kids_room .container .kids_slider_wrap .slider_control .dote i {
+            margin-top: 0.3125rem;
+            width: 0.6875rem;
+            height: 12px;
+            border: 1px solid #1f8ac6;
+            border-radius: 50%;
+            border: 1px solid #1f8ac6; }
+
+/*END KIDS ROOM*/
+.footer {
   width: 100%;
   margin-top: 3.125rem;
   position: relative;
   top: 0;
-  left: 0; }
-  .fon .fon_item {
-    width: 100%;
-    position: relative;
-    background-image: url("../../img/dsc-4716.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+  left: 0;
+  height: 30rem; }
+  .footer .footer_img {
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
-    height: 30rem; }
-    .fon .fon_item::before {
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+    .footer .footer_img::before {
       content: "";
       display: block;
       position: absolute;
@@ -712,72 +832,148 @@ body {
       top: 0;
       left: 0;
       z-index: 1; }
-  .fon .form_block {
+    .footer .footer_img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .footer .container {
     position: relative;
-    top: 0;
-    left: 0;
     z-index: 1;
-    background: #ffffff;
-    max-width: 41.5625rem;
-    width: 100%;
-    box-shadow: 0 11px 16px rgba(1, 1, 1, 0.1);
     display: flex; }
-    .fon .form_block .my_form {
+    .footer .container .foot_right {
+      position: relative;
+      top: 1.875rem;
+      z-index: 2;
+      padding-top: 10rem; }
+      .footer .container .foot_right::after {
+        border: 1px solid;
+        content: "";
+        display: block;
+        position: absolute;
+        width: 24.6875rem;
+        height: 20.625rem;
+        background-color: #40b8eb;
+        bottom: 6%;
+        right: -3.125rem;
+        z-index: -1; }
+      .footer .container .foot_right .info_title {
+        padding-left: 6.25rem;
+        margin-bottom: 5.625rem;
+        font-family: Intro;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 0.9; }
+    .footer .container .info_adress {
+      box-shadow: 0 11px 16px rgba(1, 1, 1, 0.1);
+      width: 100%;
       display: flex;
       flex-direction: column;
-      margin: 0 auto; }
-      .fon .form_block .my_form .inp {
-        width: 27.1875rem;
+      background-color: #fff;
+      position: relative;
+      padding: 3.75rem 3.125rem 3.125rem 6.25rem; }
+      .footer .container .info_adress::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 11.875rem;
         height: 3.125rem;
-        border: none;
-        text-align: center;
-        margin-top: 1.25rem;
-        color: #252a2d;
+        background-color: #1f8ac6;
+        top: -3.125rem;
+        left: -5rem;
+        z-index: 2; }
+      .footer .container .info_adress .up_scroll {
+        position: absolute;
+        top: -20%;
+        right: 3.75rem;
+        text-align: center; }
+      .footer .container .info_adress h2 {
         font-family: "Gotham Pro";
-        font-size: 1.0625rem;
+        font-size: 20px;
         font-weight: 300;
-        line-height: 1.6; }
-      .fon .form_block .my_form textarea {
-        box-shadow: inset 0 1px 24px rgba(1, 1, 1, 0.03);
-        background-color: #ffffff;
-        margin-top: 1.25rem;
-        color: #252a2d;
-        text-align: center;
+        line-height: 1.4;
+        margin-bottom: 1.875rem; }
+      .footer .container .info_adress a {
         font-family: "Gotham Pro";
-        font-size: 1.0625rem;
+        font-size: 17px;
         font-weight: 300;
-        line-height: 1.6;
-        border: none;
-        padding-top: 1.875rem; }
-      .fon .form_block .my_form .form_login {
-        box-shadow: inset 0 1px 24px rgba(1, 1, 1, 0.03);
-        background-color: #ffffff; }
-      .fon .form_block .my_form .form_email {
-        box-shadow: inset 0 1px 24px rgba(1, 1, 1, 0.09);
-        background-color: #fcfcfc; }
-      .fon .form_block .my_form .form_tema {
-        box-shadow: inset 0 1px 24px rgba(1, 1, 1, 0.03);
-        background-color: #ffffff; }
-      .fon .form_block .my_form .form_submit {
-        width: 15.625rem;
-        height: 3.125rem;
-        box-shadow: 0 1px 13px rgba(64, 184, 235, 0.36);
-        border-radius: 24px;
-        border: 1px solid #40b8eb;
-        background: #ffffff;
-        margin-top: 3.75rem;
+        line-height: 2.3; }
+      .footer .container .info_adress i {
         color: #40b8eb;
-        font-family: Intro;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.75;
-        margin: 3.125rem auto; }
+        margin-right: 0.625rem; }
+      .footer .container .info_adress .soc_seti {
+        position: absolute;
+        bottom: 3.125rem;
+        right: 2.5rem; }
+        .footer .container .info_adress .soc_seti a {
+          color: #40b8eb;
+          width: 3.125rem;
+          height: 3.125rem;
+          margin: 0 0.625rem;
+          text-align: center;
+          border: 1px solid #40b8eb;
+          border-radius: 50%; }
+    .footer .container::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 23.125rem;
+      height: 20.625rem;
+      background-color: #40b8eb;
+      bottom: -6.25rem;
+      left: 25%;
+      z-index: -2; }
 
 #map {
   width: 100%;
   height: 100vh;
+  position: relative; }
+
+.my_form {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  width: 100%;
+  max-width: 41.875rem;
+  box-shadow: 0 11px 16px rgba(1, 1, 1, 0.1);
+  padding: 4.375rem 6.875rem;
+  background: #ffffff; }
+  .my_form .inp {
+    height: 3.125rem; }
+  .my_form textarea {
+    padding: 1.25rem;
+    height: 7.8125rem; }
+  .my_form .inp, .my_form textarea {
+    width: 100%;
+    border: none;
+    text-align: center;
+    margin-top: 1.25rem;
+    color: #252a2d;
+    font-family: "Gotham Pro";
+    font-size: 1.0625rem;
+    font-weight: 300;
+    line-height: 1.6;
+    box-shadow: inset 0 1px 24px rgba(1, 1, 1, 0.09); }
+    .my_form .inp:hover, .my_form textarea:hover {
+      background-color: #fcfcfc; }
+  .my_form .form_submit {
+    position: absolute;
+    left: 30%;
+    bottom: 6.25rem;
+    width: 15.625rem;
+    height: 3.125rem;
+    box-shadow: 0 1px 13px rgba(64, 184, 235, 0.36);
+    border-radius: 24px;
+    border: 1px solid #40b8eb;
+    background: #ffffff;
+    margin-top: 1.5625rem;
+    color: #40b8eb;
+    font-family: Intro;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75; }
+    .my_form .form_submit:hover {
+      background-color: #40b8eb;
+      color: #ffffff;
+      transition: .4s; }
 
 @media only screen and (max-width: 1330px) {
   .menu_nav a {

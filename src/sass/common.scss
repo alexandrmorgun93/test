@@ -13,6 +13,7 @@ body{
 }
 
 .title{
+
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -21,7 +22,7 @@ body{
 
 }
 .prise_room{
-  .title_item{
+  .title{
     margin-bottom: rem(80px);
   }
 }
@@ -44,4 +45,12 @@ body{
     align-items: center;
     justify-content: center;
   }
+}
+
+.nannies_container{
+  width: 100%;
+  .title{
+    margin-top:100px;
+  }
+
 }
