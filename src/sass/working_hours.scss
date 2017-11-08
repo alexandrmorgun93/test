@@ -1,0 +1,133 @@
+.working_hours {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 3px solid blue;
+
+  .title {
+    margin-bottom: rem(80px);
+  }
+
+  .working_img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
+  }
+  .container {
+    position: relative;
+    margin-top: rem(70px);
+    z-index: 3;
+    &::before {
+      @include before_fig(rem(50px), rem(180px), #1f8ac6);
+      left: rem(-20px);
+      z-index: 1;
+    }
+    &::after {
+      @include before_fig(rem(50px), rem(180px), #1f8ac6);
+      right: rem(-20px);
+      bottom: 5%;
+      z-index: -1;
+
+    }
+    .working_content {
+      border: 2px solid yellow;
+      width: 60%;
+      padding: rem(80px) rem(100px) rem(180px);
+      background-color: rgba(255, 255, 255, .95);
+      &::before {
+        @include before_fig(100%, 70%, rgba(255, 255, 255, 0.8));
+        top: 0;
+        left: -50%;
+        z-index: -1;
+      }
+      .working_text {
+        p {
+          margin-bottom: rem(40px);
+          font-size: rem(17px);
+          font-weight: 300;
+          line-height: 1.64;
+        }
+      }
+      .working_timetable {
+        width: 100%;
+        display: flex;
+        .timetable_icon {
+          max-width: 95px;
+          width: 100%;
+          margin-right: rem(20px);
+        }
+        .timetable {
+          width: 100%;
+          .timetable_days {
+            display: flex;
+            margin-bottom: rem(3px);
+            li {
+              background-color: $sky_color;
+              text-align: center;
+              height: rem(50px);
+              text-transform: uppercase;
+              color: #ffffff;
+              font-family: Intro;
+              font-size: rem(20px);
+              font-weight: 400;
+              line-height: 1.4;
+              flex: 1 1 10%;
+              align-items: center;
+              margin-right: rem(3px);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &:nth-child(6), &:nth-child(7) {
+                flex: 1 1 rem(113px);
+              }
+              &:nth-child(7) {
+                margin-right: 0;
+              }
+            }
+          }
+          .timetable_time {
+            display: flex;
+            li {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #dbf4ff;
+              height: rem(50px);
+              font-size: rem(16px);
+              font-weight: 400;
+              line-height: 1.75;
+              margin-right: rem(3px);
+              flex: 1 1 10%;
+              text-align: center;
+              font-family: "Gotham Pro";
+              b {
+                padding-left: rem(5px);
+              }
+              &:nth-child(6) {
+                flex: 1 1 rem(235px);
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .reseption {
+      position: absolute;
+      right: 0;
+      bottom: rem(80px);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+
+
+
+

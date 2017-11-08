@@ -1,0 +1,70 @@
+.regulation {
+  width: 100%;
+  .title{
+    margin-bottom: rem(240px);
+  }
+  .regulation_content {
+    position: relative;
+    z-index: -2;
+    width: 100%;
+    background-image: url_css("img/clock_fon.jpg");
+    .container {
+      position: relative;
+      top: rem(-155px);
+      box-shadow: 0 7px 16px rgba(1, 1, 1, 0.1);
+      background-color: #ffffff;
+      padding: rem(80px) rem(70px) rem(100px) rem(70px);
+      &::before {
+        @include before_fig(rem(55px), rem(190px), $skyBlue_color);
+        z-index: -1;
+        left: rem(-20px);
+        top: rem(-40px);
+        -webkit-border-radius: rem(1px);
+        -moz-border-radius: rem(1px);
+        border-radius: rem(1px);
+      }
+      &::after {
+        @include before_fig(rem(55px), rem(190px), $skyBlue_color);
+        z-index: -1;
+        right: rem(-20px);
+        bottom: rem(-40px);
+        -webkit-border-radius: rem(1px);
+        -moz-border-radius: rem(1px);
+        border-radius: rem(1px);
+      }
+      .regulation_text {
+        text-align: center;
+        font-size: rem(20px);
+        font-weight: 300;
+        line-height: 1.5;
+      }
+      .special_rules {
+        width: 100%;
+        column-count: 2;
+        margin:rem(80px) 0 rem(50px) 0;
+        p {
+          margin-bottom: rem(40px);
+          font-size: 17px;
+          font-weight: 700;
+          line-height: 1.64;
+        }
+        ul {
+          margin-bottom: rem(30px);
+          li {
+            padding-left: rem(30px);
+            position: relative;
+            font-size: rem(17px);
+            font-weight: 300;
+            line-height: 1.64;
+            &::before {
+              @include before_fig(rem(10px), rem(10px), #2fa9d2);
+              border-radius: 50%;
+              top: rem(10px);
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
